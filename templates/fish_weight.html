@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Weight Prediction</title>
+</head>
+<body  style="background-color: rgb(160, 32, 102);">
+    <img src=".\E:\Data Science\Practice\Fish Weight prediction\download.jpg">
+
+    <h1> Fish Weight Prediction </h1>
+    <form method="POST" action="/predict_weight">
+
+        <label>Length1:</label>
+        <input type = "text" name = "Length1">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Length2:</label>
+        <input type = "text" name = "Length2">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Length3:</label>
+        <input type = "text" name = "Length3">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Height:</label>
+        <input type = "text" name = "Height">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Width:</label>
+        <input type = "text" name = "Width">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Species:</label>
+        <select name = "Species">
+            <option value = "Bream">Bream</option>
+            <option value = "Parkki">Parkki</option>
+            <option value = "Perch">Perch</option>
+            <option value = "Pike">Pike</option>
+            <option value = "Roach">Roach</option>
+            <option value = "Smelt">Smelt</option>
+            <option value = "Whitefish">Whitefish</option>
+        </select>
+
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>Weight of Fish will be <b> {{ prediction }} gms </b> Only </strong></h4>
+
+
+    </form>
+    
+</body>
+</html>
